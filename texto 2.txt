@@ -1,0 +1,57 @@
+package trabalho;
+
+public class elevador {
+	private int andarAtual;
+	private int TotalAndar;
+	private int CapacidadeElevador;
+	private int QuantidadePessoas;
+	public int getAndarAtual() {
+		return andarAtual;
+	}
+	public void setAndarAtual(int andarAtual) {
+		this.andarAtual = andarAtual;
+	}
+	public int getTotalAndar() {
+		return TotalAndar;
+	}
+	public void setTotalAndar(int totalAndar) {
+			TotalAndar = totalAndar;
+	}
+	public int getCapacidadeElevador() {
+		return CapacidadeElevador;
+	}
+	public void setCapacidadeElevador(int capacidadeElevador) {
+		CapacidadeElevador = capacidadeElevador;
+	}
+	public int getQuantidadePessoas() {
+		return QuantidadePessoas;
+	}
+	public void setQuantidadePessoas(int quantidadePessoas) {
+		QuantidadePessoas = quantidadePessoas;
+	}
+	public void inicializa(int cap,int tot) {
+		setCapacidadeElevador (cap);
+		setTotalAndar (tot);
+		andarAtual = 0; 
+		QuantidadePessoas = 0;		
+	}
+	public void entra() {
+		if (QuantidadePessoas<CapacidadeElevador) {
+			QuantidadePessoas = QuantidadePessoas + 1;
+			}
+	}
+	public void sai() {
+		if (CapacidadeElevador< QuantidadePessoas ) {
+		QuantidadePessoas = QuantidadePessoas -1;
+		}
+	}
+	public void sobe () {
+		if (andarAtual<TotalAndar) {
+		andarAtual = andarAtual + 1;
+		}
+	public void decer () {
+			if (andarAtual=<TotalAndar) {
+			andarAtual = andarAtual - 1;
+			}	
+	}
+	}
